@@ -77,7 +77,7 @@ export default function BackgroundBoxesDemo() {
                 </motion.div>
 
                 <a
-                    href="/resume.pdf"
+                    href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/resume.pdf`}
                     download="Anagha_Dhekne_Resume.pdf"
                     className="relative px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors mt-4 sm:mt-6"
                 >
