@@ -7,11 +7,14 @@ import { ContinuousTypewriter } from "../ui/continuous-typewriter";
 import { ArrowDown, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig.basePath || '';
+
 const playfair = Playfair_Display({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
 export default function BackgroundBoxesDemo() {
-    const resume = "/resume.pdf"; // Using require
+    const resume = `${basePath}/resume.pdf`;
 
     return (
         <div className="relative min-h-screen w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
