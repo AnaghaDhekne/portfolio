@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true,
     },
     assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
-    basePath: '/portfolio',
+    //basePath: '/portfolio',
     trailingSlash: true,
   // basePath: '/portfolio',
   distDir: 'out',
