@@ -273,7 +273,7 @@ export function Projects(): JSX.Element {
                                                 <CardItem
                                                     translateZ="30"
                                                     className="mb-4 h-3 border-b border-neutral-300 dark:border-neutral-600"
-                                                >
+                                                >  <></>
                                                 </CardItem>
                                             ) : (
                                                 <motion.div
