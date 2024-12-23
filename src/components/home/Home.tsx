@@ -6,6 +6,7 @@ import { Playfair_Display, Space_Grotesk } from 'next/font/google';
 import { ContinuousTypewriter } from "../ui/continuous-typewriter";
 import { ArrowDown, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import getConfig from "next/config";
 
 const { publicRuntimeConfig } = getConfig();
 const basePath = publicRuntimeConfig.basePath || '';
