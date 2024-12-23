@@ -57,13 +57,15 @@ export default function BackgroundBoxesDemo() {
                     className="flex gap-6 item-center relative justify-center flex-wrap"
                 >
                     {[
-                        { Icon: FaGithub, href: "#github", label: "GitHub" },
-                        { Icon: FaLinkedin, href: "#linkedin", label: "LinkedIn" },
+                        { Icon: FaGithub, href: "https://github.com/AnaghaDhekne", label: "GitHub" },
+                        { Icon: FaLinkedin, href: "https://www.linkedin.com/in/anagha-dhekne/", label: "LinkedIn" },
                         { Icon: Mail, href: "#contact", label: "Email" },
                     ].map(({ Icon, href, label }) => (
                         <motion.a
                             key={href}
                             href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label={label}
                             className="text-white/80 hover:text-white transition-colors"
                             whileHover={{ scale: 1.1 }}
