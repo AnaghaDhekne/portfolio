@@ -7,13 +7,11 @@ import { ContinuousTypewriter } from "../ui/continuous-typewriter";
 import { ArrowDown, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
 export default function BackgroundBoxesDemo() {
-    const resume = `${basePath}/resume.pdf`;
 
     return (
         <div className="relative min-h-screen w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
@@ -79,7 +77,7 @@ export default function BackgroundBoxesDemo() {
                 </motion.div>
 
                 <a
-                    href={resume}
+                    href="/resume.pdf"
                     download="Anagha_Dhekne_Resume.pdf"
                     className="relative px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors mt-4 sm:mt-6"
                 >
