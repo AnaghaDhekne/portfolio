@@ -1,19 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    loader: 'custom',
-    loaderFile: './src/lib/imageLoader.ts',
-    unoptimized: true,
+    output: 'export',  // Ensures Next.js generates static files
+    images: {
+        loader: 'custom',
+        loaderFile: './src/lib/imageLoader.ts', // Custom image loader, can be removed if not needed
+        unoptimized: true,
     },
     assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
-    basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-    trailingSlash: true,
-  // basePath: '/portfolio',
-  distDir: 'out',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-}
+    trailingSlash: true,  // Adds trailing slashes to URLs
+    distDir: 'out',  // Outputs static files to the out/ directory
+    eslint: {
+        ignoreDuringBuilds: true,  // Optional: Ignore ESLint during build
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
