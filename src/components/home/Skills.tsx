@@ -2,7 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaJava, FaJs, FaPython, FaHtml5, FaCss3Alt, FaComments, FaReact, FaNodeJs, FaAngular, FaAws, FaGitAlt, FaDocker, FaJira, FaConfluence, FaBrain } from "react-icons/fa";
-import { SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiExpress, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiFirebase, SiGooglecloud, SiKubernetes, SiJenkins, SiPostman, SiTensorflow, SiPandas, SiNumpy, SiScikitlearn, SiSpacy, SiApachekafka, SiMicrosoftsqlserver, SiElasticsearch } from "react-icons/si";
+import { SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiExpress, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiJenkins, SiPostman, SiTensorflow, SiPandas, SiNumpy, SiScikitlearn, SiSpacy, SiApachekafka, SiMicrosoftsqlserver, SiElasticsearch } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { useTheme } from "next-themes";
 
@@ -100,7 +100,7 @@ export const SkillsParallax = () => {
                         </motion.div>
                         {/* Row 2 */}
                         <motion.div
-                            
+
                             className="flex flex-row gap-4 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-8 justify-start md:justify-center"
                         >
                             {skills.row2.map((skill) => (
@@ -113,7 +113,7 @@ export const SkillsParallax = () => {
                         </motion.div>
                         {/* Row 3 */}
                         <motion.div
-                           
+
                             className="flex flex-row-reverse gap-4 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-8 justify-start md:justify-center"
                         >
                             {skills.row3.map((skill) => (
@@ -126,7 +126,7 @@ export const SkillsParallax = () => {
                         </motion.div>
                         {/* Row 4 */}
                         <motion.div
-                           
+
                             className="flex flex-row gap-4 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-8 justify-start md:justify-center"
                         >
                             {skills.row4.map((skill) => (
@@ -139,7 +139,7 @@ export const SkillsParallax = () => {
                         </motion.div>
                         {/* Row 5 */}
                         <motion.div
-                           
+
                             className="flex flex-row-reverse gap-4 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-8 justify-start md:justify-center"
                         >
                             {skills.row5.map((skill) => (
@@ -165,7 +165,7 @@ const Header = () => {
             </h1>
             {/* <p className="max-w-3xl text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 sm:mt-6 md:mt-8 lg:mt-10 dark:text-neutral-200"> */}
             <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 mt-4 sm:mt-6 md:mt-8 lg:mt-10 max-w-2xl mx-auto">
-               
+
             </p>
         </div>
 

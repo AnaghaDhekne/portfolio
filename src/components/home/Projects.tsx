@@ -222,31 +222,31 @@ export function Projects(): JSX.Element {
                                                 {project.desc}
                                             </p>
 
-                                            
+
 
                                             <div className="item-center flex justify-center">
-                                            <CardItem
-                                                translateZ="30"
-                                                className="flex mb-4 items-center justify-center gap-4"
-                                            >
-                                                {project.icons.map((icon: ProjectIcon, iconIndex: number) => (
-                                                    <div
-                                                        key={iconIndex}
-                                                        className="w-10 h-10 rounded-full flex items-center justify-center dark:bg-zinc-200 -ml-3 first:ml-0 group/item relative"
-                                                    >
-                                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neutral-10 dark:from-neutral-10 to-neutral-10 dark:to-neutral-50" />
-                                                        {React.createElement(icon.icon, {
-                                                            className: "w-6 h-6 transition-transform duration-300",
-                                                            style: { color: icon.color }
-                                                        })}
-
-                                                        {/* Hover effect (optional) */}
+                                                <CardItem
+                                                    translateZ="30"
+                                                    className="flex mb-4 items-center justify-center gap-4"
+                                                >
+                                                    {project.icons.map((icon: ProjectIcon, iconIndex: number) => (
                                                         <div
-                                                            className="absolute inset-0 blur-lg opacity-20 transition-opacity duration-300 group/item:hover:opacity-40"
-                                                            style={{ backgroundColor: icon.color }}
-                                                        />
-                                                    </div>
-                                                ))}
+                                                            key={iconIndex}
+                                                            className="w-10 h-10 rounded-full flex items-center justify-center dark:bg-zinc-200 -ml-3 first:ml-0 group/item relative"
+                                                        >
+                                                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neutral-10 dark:from-neutral-10 to-neutral-10 dark:to-neutral-50" />
+                                                            {React.createElement(icon.icon, {
+                                                                className: "w-6 h-6 transition-transform duration-300",
+                                                                style: { color: icon.color }
+                                                            })}
+
+                                                            {/* Hover effect (optional) */}
+                                                            <div
+                                                                className="absolute inset-0 blur-lg opacity-20 transition-opacity duration-300 group/item:hover:opacity-40"
+                                                                style={{ backgroundColor: icon.color }}
+                                                            />
+                                                        </div>
+                                                    ))}
                                                 </CardItem>
                                             </div>
 
@@ -267,7 +267,7 @@ export function Projects(): JSX.Element {
                                                 </CardItem>
                                             </div>
 
-                                            
+
 
                                             {!project.publication ? (
                                                 <CardItem
