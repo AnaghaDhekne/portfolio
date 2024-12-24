@@ -45,7 +45,7 @@ git clone https://github.com/AnaghaDhekne/portfolio.git
 
 2. Install dependencies:
 ```bash
-cd portfolio-main
+cd portfolio
 npm install
 ```
 
