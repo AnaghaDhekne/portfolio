@@ -35,7 +35,7 @@ export const CardStack = ({
                 newArray.unshift(newArray.pop()!);
                 return newArray;
             });
-        }, 5000);
+        }, 8000);
     };
 
     return (
@@ -68,8 +68,8 @@ export const CardStack = ({
                             />
 
                         </div>
-                        <div className="relative w-1/2 h-full flex justify-center items-center p-8">
-                            <div className="font-normal text-justify text-neutral-700 dark:text-neutral-200 text-left">
+                        <div className="relative w-1/2 h-full flex justify-center items-center">
+                            <div className="font-normal text-justify text-neutral-700 dark:text-neutral-200 text-left italic text-lg leading-relaxed">
                                 {card.content}
                             </div>
                         </div>

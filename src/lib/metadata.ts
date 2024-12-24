@@ -145,17 +145,17 @@ export const education = [
 export const cards = [
     {
         id: 0,
-        content: "Performance oriented Computer Science graduate with 3.5+ years of diverse experience in full-stack development, system architecture, testing strategies, and database management. Proficient in agile methodologies, delivering high-quality, scalable applications. Demonstrated expertise in designing and implementing innovative solutions that align with business goals.",
+        content: "Performance oriented Computer Science graduate with 3.5+ years of diverse experience in full-stack development, testing strategies, system architecture and database management. Proficient in agile methodologies, delivering high-quality, scalable applications. Demonstrated expertise in designing and implementing innovative solutions that align with business goals.",
         image: "images/anagha1.jpg"
     },
     {
         id: 1,
-        content:"As a passionate Software Development Engineer, I excel at building reliable, scalable, and efficient software solutions through collaboration and innovation. My expertise includes designing robust back-end systems, creating seamless front-end experiences, and leveraging modern frameworks like Spring Boot, React.js, and Node.js. From developing microservices and crafting secure APIs to optimizing performance, I work closely with cross-functional teams to deliver software that exceeds user expectations. With a strong foundation in Agile practices and CI/CD pipelines, I thrive in dynamic, team-oriented environments where collective effort drives success and quality.",
+        content: "As a passionate Software Development Engineer, I build scalable, efficient software solutions through collaboration and innovation. My expertise spans designing back-end systems, creating seamless front-ends, and using frameworks like Spring Boot, React.js, and Node.js. I develop microservices, secure APIs, and optimize performance, working closely with cross-functional teams to exceed user expectations.",
         image: "images/anagha.jpg"
     },
     {
         id: 2,
-        content: "Passionate about uncovering insights and solving complex problems through data, with a solid background in Python, SQL, and machine learning frameworks like TensorFlow and Scikit- learn.Experienced in developing predictive models, ETL pipelines, and NLP solutions to turn raw data into actionable insights.Skilled at blending analytical thinking with creativity to deliver impactful solutions, while fostering innovation and leveraging data - driven strategies to drive smarter decisions and create measurable value in dynamic environments.",
+        content:"Passionate about solving complex problems through data, with expertise in Python, SQL, and machine learning frameworks like TensorFlow and Scikit-learn. Experienced in developing predictive models, ETL pipelines, and NLP solutions to turn raw data into actionable insights. Skilled at blending analytical thinking with creativity to deliver impactful, data-driven solutions that drive smarter decisions and create measurable value.",
         image: "images/anagha2.jpg"
     },
 ]
