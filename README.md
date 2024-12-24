@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 ## Live Demo
 
-Visit the live portfolio at:
+Visit the live portfolio at: https://anaghadhekne.github.io/portfolio/
 
 ## Features
 
@@ -45,7 +45,7 @@ git clone https://github.com/AnaghaDhekne/portfolio.git
 
 2. Install dependencies:
 ```bash
-cd portfolio-main
+cd portfolio
 npm install
 ```
 
