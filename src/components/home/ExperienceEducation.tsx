@@ -84,7 +84,7 @@ export default function ExperienceEducation() {
                     viewport={{ once: true }}
                     className="text-center"
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white sm:mb-4">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
                         Experience & Education
                     </h2>
 

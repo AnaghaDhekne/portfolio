@@ -15,18 +15,31 @@
 
 /* Mobile viewport height fix */
 @supports (-webkit-touch-callout: none) {
-  .h-screen {
-    height: -webkit-fill-available;
-  }
-
-  .min-h-screen {
-    min-height: -webkit-fill-available;
-  }
-
-  .max-h-screen {
-    max-height: -webkit-fill-available;
-  }
+    .h-screen,
+    .min-h-screen,
+    .max-h-screen {
+        height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
+        max-height: -webkit-fill-available;
+    }
 }
+
+/* Example media query for mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .some-container {
+        width: 100%; /* Ensure elements fit the screen on smaller devices */
+    }
+
+    .py-20 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 
 /* Enhanced dot pattern with better visibility */
 .bg-dot-pattern {
@@ -40,11 +53,7 @@
 }
 
 .dark .bg-dot-pattern {
-  background-image: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.15) 2px,
-    transparent 2px
-  );
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
 }
 
 /* 3D Card Styles */

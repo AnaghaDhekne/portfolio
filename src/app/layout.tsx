@@ -47,6 +47,7 @@ export default function RootLayout({
         <html lang="en" className="scroll-smooth" suppressHydrationWarning>
             <head>
                 <link rel="icon" type="image/ico+xml" href="/favicon.ico" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
                 <Script id="viewport-fix" strategy="beforeInteractive">{`
           function setViewportHeight() {
             let vh = window.innerHeight * 0.01;

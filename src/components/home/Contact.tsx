@@ -74,18 +74,19 @@ const ContactCard: React.FC = () => {
                         transition={{ duration: 0.5 }}
                         className="text-center mb-16"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
+                        <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
                             Get in Touch
                         </h2>
-                        <p className="text-neutral-600 dark:text-neutral-400 whitespace-nowrap">
+                        <p className="text-neutral-600 dark:text-neutral-400 text-xs sm:text-xs md:text-sm lg:text-md xl:text-lg">
                             Feel free to reach out for collaborations or just a friendly hello
                         </p>
                     </motion.div>
 
+
                     {/* Card content */}
                     <div className="relative w-full max-w-md mx-auto transform space-y-4 rounded-xl bg-white/80 backdrop-blur-sm p-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] dark:bg-gray-800/80">
                         <div className="mb-6 text-center">
-                            <h2 className="mb-1 text-2xl font-bold text-gray-800 dark:text-white">{contactData.name}</h2>
+                            <h2 className="mb-1 text-lg sm:text-xl md:text-2xl font-bold text-gray-800 dark:text-white">{contactData.name}</h2>
                         </div>
 
                         <div className="space-y-3">

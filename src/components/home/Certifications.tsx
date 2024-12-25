@@ -34,9 +34,10 @@ export default function Certifications() {
                     transition={{ duration: 0.5 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
                         Certifications
                     </h2>
+
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -49,12 +50,12 @@ export default function Certifications() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <CardHoverEffect className={`${isDark
-                                    ? '!bg-gradient-to-br !from-neutral-900/50 !to-neutral-800/50 !border-0'
-                                    : '!bg-gradient-to-br !from-white/5 !to-white/10 !border-0'
+                                ? '!bg-gradient-to-br !from-neutral-900/50 !to-neutral-800/50 !border-0'
+                                : '!bg-gradient-to-br !from-white/5 !to-white/10 !border-0'
                                 } backdrop-blur-sm shadow-lg`}>
                                 <div className="p-6">
                                     <div className="flex justify-between items-start mb-2">
-                                        <h3 className="font-bold text-lg text-gray-800 dark:text-white bg-clip-text">
+                                        <h3 className="font-bold text-lg  text-gray-800 dark:text-white bg-clip-text">
                                             {cert.title}
                                         </h3>
                                         <span className="text-sm text-neutral-500 dark:text-neutral-400 whitespace-nowrap ml-4">

@@ -39,12 +39,12 @@ export const CardStack = ({
     };
 
     return (
-        <div className="relative h-96 w-full md:h-[400px] md:w-[900px]">
+        <div className="relative h-[32rem] w-full max-w-[900px] mx-auto">
             {cards.map((card, index) => {
                 return (
                     <motion.div
                         key={card.id}
-                        className="gap-12 absolute dark:bg-black bg-white h-96 w-full md:h-[400px] md:w-[900px] rounded-3xl shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex overflow-hidden"
+                        className="absolute w-full h-full rounded-3xl shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] dark:bg-black bg-white"
                         style={{
                             transformOrigin: "top center",
                         }}
@@ -54,23 +54,24 @@ export const CardStack = ({
                             zIndex: cards.length - index,
                         }}
                     >
-                        <div className="relative w-[300px] h-full flex justify-center items-center">
-                            <div
-                                className="absolute w-full h-full bg-cover bg-center"
-                                style={{
-                                    backgroundImage: `url(${card.image})`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center",
-                                }}
-                            />
-                            <div
-                                className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent/60 dark:to-transparent/60"
-                            />
+                        <div className="flex flex-col sm:flex-row h-full">
+                            {/* Image container */}
+                            <div className="relative w-full h-[45%] sm:h-full sm:w-1/2 overflow-hidden rounded-t-3xl sm:rounded-l-3xl sm:rounded-tr-none">
+                                <img
+                                    src={card.image}
+                                    alt="Card image"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-b sm:bg-gradient-to-r from-white/10 to-transparent/60 dark:to-transparent/60" />
+                            </div>
 
-                        </div>
-                        <div className="relative w-1/2 h-full flex justify-center items-center">
-                            <div className="font-normal text-justify text-neutral-700 dark:text-neutral-200 text-left italic text-lg leading-relaxed">
-                                {card.content}
+                            {/* Content container */}
+                            <div className="flex-1 sm:w-1/2 p-6 flex items-center">
+                                <div className="w-full">
+                                    <div className="font-normal text-neutral-700 dark:text-neutral-200 text-sm sm:text-base md:text-lg leading-relaxed italic">
+                                        {card.content}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </motion.div>

@@ -9,7 +9,6 @@ import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "../../lib/utils";
 import { projects } from "../../lib/metadata";
 
-// Define the CardContainer component
 export const CardContainer = ({
     children,
     className,
@@ -49,7 +48,6 @@ export const CardContainer = ({
     );
 };
 
-// Define the CardBody component
 export const CardBody = ({
     children,
     className,
@@ -58,13 +56,12 @@ export const CardBody = ({
     className?: string;
 }) => {
     return (
-        <div className={cn("relative bg-gray-50 rounded-xl p-6", className)}>
+        <div className={cn("relative bg-gray-50 rounded-xl p-3 sm:p-6", className)}>
             {children}
         </div>
     );
 };
 
-// Define the CardItem component
 export const CardItem = ({
     children,
     className,
@@ -137,13 +134,13 @@ export function Projects(): JSX.Element {
 
     const scrollLeft = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+            carouselRef.current.scrollBy({ left: -250, behavior: "smooth" });
         }
     };
 
     const scrollRight = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+            carouselRef.current.scrollBy({ left: 250, behavior: "smooth" });
         }
     };
 
@@ -156,33 +153,33 @@ export function Projects(): JSX.Element {
     };
 
     return (
-        <div className="py-24 bg-white dark:bg-black" id="projects">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white dark:bg-black py-12 sm:py-24" id="projects">
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center"
+                    className="text-center mb-4 sm:mb-6"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 dark:text-white">
                         Featured Projects
                     </h2>
                 </motion.div>
 
-                <div className="flex justify-end gap-2">
+                <div className="flex justify-end gap-2 mb-4">
                     <button
-                        className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center disabled:opacity-50"
+                        className="relative z-40 h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center disabled:opacity-50"
                         onClick={scrollLeft}
                         disabled={!canScrollLeft}
                     >
-                        <IconArrowNarrowLeft className="h-6 w-6 text-black dark:text-gray-300" />
+                        <IconArrowNarrowLeft className="h-4 w-4 sm:h-6 sm:w-6 text-black dark:text-gray-300" />
                     </button>
                     <button
-                        className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center disabled:opacity-50"
+                        className="relative z-40 h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center disabled:opacity-50"
                         onClick={scrollRight}
                         disabled={!canScrollRight}
                     >
-                        <IconArrowNarrowRight className="h-6 w-6 text-black dark:text-gray-300" />
+                        <IconArrowNarrowRight className="h-4 w-4 sm:h-6 sm:w-6 text-black dark:text-gray-300" />
                     </button>
                 </div>
 
@@ -190,9 +187,9 @@ export function Projects(): JSX.Element {
                     <div
                         ref={carouselRef}
                         onScroll={checkScrollability}
-                        className="flex w-full overflow-x-scroll overscroll-x-auto py-10 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+                        className="flex w-full overflow-x-scroll overscroll-x-auto py-2 sm:py-10 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
                     >
-                        <div className="flex flex-row gap-6 pl-4">
+                        <div className="flex flex-row gap-3 sm:gap-6 pl-2 sm:pl-4">
                             {projects.map((project: Project, index: number) => (
                                 <motion.div
                                     key={project.id}
@@ -205,99 +202,98 @@ export function Projects(): JSX.Element {
                                             delay: 0.1 * index
                                         }
                                     }}
-                                    className="w-full cursor-pointer"
+                                    // Increased width values for all breakpoints
+                                    className="w-[320px] md:w-[380px] lg:w-[440px] flex-shrink-0 cursor-pointer"
                                     onClick={() => handleProjectClick(project.link)}
                                 >
                                     <CardContainer>
-                                        <CardBody className="relative w-full h-[480px] bg-white dark:bg-neutral-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 flex flex-col group/card hover:border-blue-500/50 transition-colors">
-                                            <h3
-                                                className="flex text-lg whitespace-nowrap md:text-md font-semibold text-neutral-900 dark:text-white mb-1.5"
-                                            >
-                                                {project.title}
-                                            </h3>
+                                        <CardBody className="relative w-full bg-white dark:bg-neutral-900 rounded-xl p-4 sm:p-6 border border-zinc-200 dark:border-zinc-800 group/card hover:border-blue-500/50 transition-colors">
+                                            <div className="flex flex-col h-full">
+                                                {/* Title Section - Fixed height */}
+                                                <div className="h-12 sm:h-14 mb-2">
+                                                    <h3 className="text-sm sm:text-lg font-semibold text-neutral-900 dark:text-white line-clamp-2">
+                                                        {project.title}
+                                                    </h3>
+                                                </div>
 
-                                            <p
-                                                className="text-neutral-500 text-justify dark:text-neutral-400 text-xs mb-4 line-clamp-4 leading-relaxed"
-                                            >
-                                                {project.desc}
-                                            </p>
+                                                {/* Description Section - Fixed height */}
+                                                <div className="h-20 sm:h-24 mb-4">
+                                                    <p className="text-neutral-500 text-justify dark:text-neutral-400 text-xs sm:text-sm leading-relaxed line-clamp-4">
+                                                        {project.desc}
+                                                    </p>
+                                                </div>
 
 
-
-                                            <div className="item-center flex justify-center">
-                                                <CardItem
-                                                    translateZ="30"
-                                                    className="flex mb-4 items-center justify-center gap-4"
-                                                >
-                                                    {project.icons.map((icon: ProjectIcon, iconIndex: number) => (
-                                                        <div
-                                                            key={iconIndex}
-                                                            className="w-10 h-10 rounded-full flex items-center justify-center dark:bg-zinc-200 -ml-3 first:ml-0 group/item relative"
-                                                        >
-                                                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neutral-10 dark:from-neutral-10 to-neutral-10 dark:to-neutral-50" />
-                                                            {React.createElement(icon.icon, {
-                                                                className: "w-6 h-6 transition-transform duration-300",
-                                                                style: { color: icon.color }
-                                                            })}
-
-                                                            {/* Hover effect (optional) */}
+                                                {/* Icons Section - Fixed height */}
+                                                <div className="h-12 sm:h-14 mb-4">
+                                                    <div className="flex flex-wrap justify-center gap-1">
+                                                        {project.icons.map((icon: ProjectIcon, iconIndex: number) => (
                                                             <div
-                                                                className="absolute inset-0 blur-lg opacity-20 transition-opacity duration-300 group/item:hover:opacity-40"
-                                                                style={{ backgroundColor: icon.color }}
+                                                                key={iconIndex}
+                                                                className="w-7 h-7 sm:w-9 sm:h-9 rounded-full flex items-center justify-center bg-zinc-100 dark:bg-zinc-200 relative group/item"
+                                                            >
+                                                                {React.createElement(icon.icon, {
+                                                                    className: "w-4 h-4 sm:w-5 sm:h-5",
+                                                                    style: { color: icon.color }
+                                                                })}
+                                                                <div
+                                                                    className="absolute inset-0 rounded-full blur-lg opacity-20 transition-opacity duration-300 group-hover/item:opacity-40"
+                                                                    style={{ backgroundColor: icon.color }}
+                                                                />
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+
+                                                {/* Image Section - Fixed height and adjusted for wider cards */}
+                                                <div className="h-44 sm:h-52 mb-4">
+                                                    <CardItem
+                                                        translateZ="50"
+                                                        className="w-full h-full"
+                                                    >
+                                                        <div className="relative w-full h-full rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                                                            <Image
+                                                                src={project.img}
+                                                                alt={project.title}
+                                                                fill
+                                                                sizes="(max-width: 768px) 320px, (max-width: 1024px) 380px, 440px"
+                                                                className="object-cover transform transition-all duration-500 group-hover/card:scale-105"
                                                             />
                                                         </div>
-                                                    ))}
-                                                </CardItem>
-                                            </div>
+                                                    </CardItem>
+                                                </div>
 
-                                            <div className="item-center flex justify-center">
-                                                <CardItem
-                                                    translateZ="50"
-                                                    className="w-[350px] h-[200px] mb-2 item-center flex justify-center"
-                                                >
-                                                    <div className="relative item-center w-full h-full rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-                                                        <Image
-                                                            src={project.img}
-                                                            alt={project.title}
-                                                            fill
-                                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                                            className="object-cover transform transition-all duration-500 group-hover/card:scale-105"
-                                                        />
-                                                    </div>
-                                                </CardItem>
-                                            </div>
-
-
-
-                                            {!project.publication ? (
-                                                <CardItem
-                                                    translateZ="30"
-                                                    className="mb-4 h-3 border-b border-neutral-300 dark:border-neutral-600"
-                                                >  <></>
-                                                </CardItem>
-                                            ) : (
-                                                <motion.div
-                                                    className="mb-4 text-neutral-500 dark:text-neutral-400 text-sm line-clamp-2 leading-relaxed font-semibold text-neutral-900 dark:text-white mb-1.5"
-                                                    onClick={() => handlePublishClick(project.publication)}
-                                                >
-                                                    IEEE Paper
-                                                </motion.div>
-                                            )}
-
-                                            <h3
-                                                className="flexitems-center whitespace-nowrap justify-center mb-4 text-xs font-semibold text-neutral-900 dark:text-white text-center"
-                                            >
-                                                {project.tech}
-                                            </h3>
+                                                {/* Publication and Tech Stack Section - Fixed height */}
+                                                <div className="h-16 sm:h-20">
+                                                    {!project.publication ? (
+                                                        <CardItem
+                                                            translateZ="30"
+                                                            className="mb-4 h-3 border-b border-neutral-300 dark:border-neutral-600"
+                                                        >  <></>
+                                                        </CardItem>
+                                                    ) : (
+                                                        <motion.div
+                                                            className="text-neutral-500 dark:text-neutral-400 text-xs sm:text-sm font-semibold text-center mb-2"
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                handlePublishClick(project.publication);
+                                                            }}
+                                                        >
+                                                            IEEE Paper
+                                                        </motion.div>
+                                                    )}
 
 
-                                            <div className="flex justify-between items-center">
-                                                <div
-                                                    className={`relative w-full py-0.5 rounded-full ${isDark
-                                                        ? 'bg-slate-100'
-                                                        : 'bg-slate-100'
-                                                        } before:opacity-100 transition-transform`}
-                                                >
+                                                    <p className="text-xs font-semibold text-neutral-900 dark:text-white text-center line-clamp-2">
+                                                        {project.tech}
+                                                    </p>
+                                                </div>
+
+
+
+                                                {/* Bottom Border */}
+                                                <div className="h-1">
+                                                    <div className={`w-full h-0.5 rounded-full ${isDark ? 'bg-slate-100' : 'bg-slate-100'}`} />
                                                 </div>
                                             </div>
                                         </CardBody>
@@ -308,13 +304,13 @@ export function Projects(): JSX.Element {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center mt-4 sm:mt-8">
                     <motion.a
                         href="https://github.com/AnaghaDhekne"
                         target="_blank"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="group relative flex justify-center inline-flex gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-5 py-2 rounded-full text-md font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                        className="group relative flex justify-center inline-flex gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-4 sm:px-5 py-2 rounded-full text-sm sm:text-md font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}

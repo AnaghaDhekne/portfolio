@@ -71,7 +71,7 @@ export default function Footer() {
                             href="https://github.com/AnaghaDhekne/portfolio"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-black-600 dark:text-white-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200"
+                            className="text-xs sm:text-xs md:text-sm text-black-600 dark:text-white-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200"
                         >
                             View Portfolio Source Code →
                         </a>
@@ -82,3 +82,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+

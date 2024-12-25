@@ -177,8 +177,6 @@ export const projects = [
             { icon: SiPandas, color: "#150458" },  // Pandas
             { icon: SiFlask, color: "#000000" },  // Flask
             { icon: SiMysql, color: "#4479A1" },  // MySQL
-            { icon: SiHtml5, color: "#E34F26" },  // HTML
-            { icon: SiJavascript, color: "#F7DF1E" }  // JavaScript
         ],
         link: "https://github.com/AnaghaDhekne/Automatic-Depression-Detection",
         publication: "https://ieeexplore.ieee.org/document/9210301",
@@ -232,7 +230,6 @@ export const projects = [
             { icon: SiFlask, color: "#000000" },  // Flask
             { icon: SiMysql, color: "#4479A1" },  // MySQL
             { icon: SiHtml5, color: "#E34F26" },  // HTML
-            { icon: SiCss3, color: "#1572B6" },  // CSS
             { icon: SiJavascript, color: "#F7DF1E" },  // JavaScript
             { icon: FaChartLine, color: "#4CAF50" },  // Linear Regression (used in model training)
             { icon: SiScikitlearn, color: "#F7931E" },  // Scikit-learn
