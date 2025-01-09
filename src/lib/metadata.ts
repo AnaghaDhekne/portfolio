@@ -166,7 +166,7 @@ export const projects = [
         tech: "HTML • CSS • JS • Flask • Pandas • MySQL • TensorFlow • Keras • PyTorch • CNN",
         title: "Automatic Depression detection through Visual Inputs",
         desc: "Automatic Depression Detection through Visual Inputs uses computer vision and machine learning to analyze facial expressions and emotional cues with co-relation to BDI score to accurately identify signs of depression.",
-        img: "images/projects/depression.png",
+        img: "images/depression.png",
         icons: [
             { icon: SiPython, color: "#3776AB" },  // Python
             { icon: SiTensorflow, color: "#FF6F00" },  // TensorFlow
@@ -186,7 +186,7 @@ export const projects = [
         tech: "NLTK • TF-IDF • Doc2Vec • Logistic Regression • Naive Bayes • SVM • Matplotlib",
         title: "Hate Speech Detection",
         desc: "This project analyzes tweets to detect hate speech and offensive language using machine learning techniques. The primary goal is to preprocess the data, perform exploratory data analysis (EDA), build models, and evaluate their performance.",
-        img: "images/projects/hatespeech.png",
+        img: "images/hatespeech.png",
         icons: [
             { icon: SiPython, color: "#306998" },  // Python
             { icon: SiApacheairflow, color: "#FF6600" },  // Apache Airflow
@@ -205,7 +205,7 @@ export const projects = [
         tech: "Data Visualization • Linear Regression • Recursive Feature Elimination • Modeling",
         title: "Facebook Ad Campaign Analysis",
         desc: " The Facebook-AdCampaign-Analysis project focuses on performing Exploratory Data Analysis (EDA) on ad campaign data and selecting the best machine learning algorithm for predicting campaign success.",
-        img: "images/projects/facebook.png",
+        img: "images/facebook.png",
         icons: [
             { icon: SiPython, color: "#3776AB" },  // Python
             { icon: SiPandas, color: "#150458" },  // Pandas
@@ -222,7 +222,7 @@ export const projects = [
         tech: "Feature Engineering • Random Forest • Gradient Boosting • Voting Classifiers",
         title: "Telco Customer Churn Prediction: Ensemble Learning",
         desc: "Developed an ensemble system using Random Forest, Gradient Boosting, and Voting Classifiers, achieving 89.92% accuracy in predicting churn based on demographics, service usage patterns, payment methods, and customer support.",
-        img: "images/projects/telco.png",
+        img: "images/telco.png",
         icons: [
             { icon: SiPython, color: "#3776AB" },  // Python
             { icon: SiNumpy, color: "#013243" },  // NumPy
@@ -243,7 +243,7 @@ export const projects = [
         tech: "Java • SpringBoot • Maven • SQL • Junit • Postman • Swagger • Agile • Scrum",
         title: "Shift Management",
         desc: "A web application that enables streamlined scheduling, real-time adjustments, and enhanced visibility into workforce allocation, thereby boosting overall operational efficiency and reducing labor costs.",
-        img: "images/projects/shift.png",
+        img: "images/shift.png",
         icons: [
             { icon: FaJava, color: "#007396" },  // Java
             { icon: SiMysql, color: "#00758F" },  // MySQL
@@ -263,7 +263,7 @@ export const projects = [
         tech: "C++ • Threading • Mutex • Future • Locks • Async • Condition Variables",
         title: "Parallel Programming for Sudoku",
         desc: "Developed a high-performance Sudoku solver using C++17 features like threads, mutex, condition variables, locks, and async, reducing computation time by 98% - from 374s to 6ms.",
-        img: "images/projects/Sudoku.jpg",
+        img: "images/Sudoku.jpg",
         icons: [
             { icon: FcParallelTasks, color: "#F05138" },
             { icon: FaSync, color: "#FFCA28" },
