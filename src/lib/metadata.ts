@@ -94,7 +94,7 @@ export const experiences = [
         company: "OneGo",
         location: "Pune, IN",
         type: "Internship",
-        date: "August 2019 - April 2019",
+        date: "August 2019 - April 2020",
         description: "Developed and optimized end-to-end pipelines for real-time video emotion detection. Built an ETL pipeline using Apache Airflow for workflow orchestration, achieving 65% accuracy in emotion detection through machine learning on video data. Designed an image preprocessing pipeline leveraging OpenCV and Python, implementing frame separation, brightness adjustment, and 48x48 grayscale standardization, reaching 95% accuracy while effectively handling corrupted files and noise reduction. Improved processing efficiency by 40% through optimized feature extraction pipelines utilizing CNNs, and libraries such as PyTorch, TensorFlow, Keras, and scikit-learn, employing vectorized operations in NumPy. Additionally, developed a web application with Flask, HTML, CSS, and JavaScript, enabling users to upload video files for real-time emotion detection, seamlessly integrating backend processing with machine learning to deliver an interactive and user-friendly experience.",
         skills: ["ETL Pipeline", "Python", "OpenCV", "Machine Learning", "CNNs", "PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "Data Preprocessing", "Feature Extraction", "Flask", "HTML", "CSS", "JavaScript"]
     },
