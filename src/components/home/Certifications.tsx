@@ -7,6 +7,12 @@ import { useTheme } from 'next-themes';
 
 const certifications = [
     {
+        title: "AWS Cloud Practitioner",
+        subtitle: "AWS",
+        date: "January 2025",
+        link: "https://www.credly.com/badges/345309cc-af64-4e00-9f8e-de7066c5d008/linked_in_profile"
+    },
+    {
         title: "Python Certification",
         subtitle: "HackerRank",
         date: "June 2020",
