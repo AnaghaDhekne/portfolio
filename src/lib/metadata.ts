@@ -54,13 +54,13 @@ export const generateMetadata = (path: string): Metadata => {
 
 export const experiences = [
     {
-        title: "Software Research Intern",
+        title: "Research Intern",
         company: "Syracuse University",
         location: "Syracuse, NY",
         type: "Internship",
-        date: "July 2024 - Present",
-        description: "A high-performance Sudoku solver was developed in C++17, leveraging smart pointers, threads, mutexes, condition variables, and async to maximize concurrency and efficiency. Lock-free data structures and optimized algorithms significantly reduced computation time. A performance monitoring framework tracked key metrics, enabling architectural improvements through efficient load balancing and work distribution. These enhancements cut the solving time for a complex 25x25 puzzle from 374 seconds to just 6 milliseconds, achieving optimal CPU utilization across multiple cores.",
-        skills: ["C++17", "Smart Pointers", "Lock-free Data Structures", "Multithreading", "Parallel Processing", "Threads", "Mutexes", "Condition Variables", "Locks", "Async", "Performance Monitoring", "Load Balancing", "Work Distribution", "CPU Optimization"],
+        date: "June 2024 - Present",
+        description: "Developed a scalable ETL pipeline to scrape and extract 100K+ social media posts using Python, Apache Airflow, and Beautiful Soup, ensuring efficient data ingestion. Designed a robust NLP preprocessing pipeline with NLTK and TextBlob for tokenization, lemmatization, and stemming. Engineered feature extraction with TF-IDF and Doc2Vec, enhancing logistic regression model accuracy by 3%. Built hate speech detection models, achieving 80% precision with logistic regression, surpassing SVM (77%) and Naive Bayes (65%), validated through cross-validation and classification reports. Created interactive data visualizations with Matplotlib and Seaborn to analyze hate speech trends, including class distributions, word clouds, top n-grams, and sentiment polarity distributions.",
+        skills: ["Python", "ETL", "Web Scraping", "NLP", "NLTK", "TextBlob", "TF-IDF", "Doc2Vec", "Logistic Regression", "SVM", "Naive Bayes", "Cross-validation", "Matplotlib", "Seaborn", "Data Visualization", "Feature Engineering", "Classification Reports"],
     },
     {
         title: "System Test Intern",
