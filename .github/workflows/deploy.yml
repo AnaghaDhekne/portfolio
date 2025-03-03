@@ -39,7 +39,7 @@ jobs:
           SKIP_ESLINT: true
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@latest
         with:
           path: ./out
 
