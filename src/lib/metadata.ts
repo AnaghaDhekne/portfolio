@@ -145,7 +145,7 @@ export const education = [
 export const cards = [
     {
         id: 0,
-        content: "Performance oriented Computer Science graduate with 3.5+ years of diverse experience in full-stack development, testing strategies, system architecture and database management. Proficient in agile methodologies, delivering high-quality, scalable applications. Demonstrated expertise in designing and implementing innovative solutions that align with business goals.",
+        content: "Performance oriented Computer Science graduate with 3+ years of diverse experience in full-stack development, testing strategies, system architecture and database management. Proficient in agile methodologies, delivering high-quality, scalable applications. Demonstrated expertise in designing and implementing innovative solutions that align with business goals.",
         image: "images/anagha1.jpg"
     },
     {
